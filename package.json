@@ -1,0 +1,51 @@
+{
+  "name": "autoScout",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "dependencies": {
+    "@hapi/boom": "^9.1.1",
+    "@hapi/glue": "^6.1.0",
+    "@hapi/hapi": "^18.3.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/lab": "^24.1.0",
+    "@pm2/io": "^4.3.5",
+    "blipp": "^4.0.2",
+    "chai": "^4.2.0",
+    "csv-file-validator": "^1.10.1",
+    "csv-parse": "^4.15.0",
+    "csv-parser": "^3.0.0",
+    "fast-csv": "^4.3.6",
+    "hapi-api-key": "^3.3.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "neat-csv": "^6.0.1",
+    "node-csv": "^0.1.2",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "mocha": "^7.1.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js",
+    "inspect": "node --nolazy --inspect-brk=9229  app.js",
+    "lint": "eslint api config test",
+    "checksec": "snyk test",
+    "test": "node ./node_modules/mocha/bin/mocha test/unit/**/*.test.js --exit",
+    "fulltest": "yarn lint && yarn checklicense && yarn test",
+    "checklicense": "node_modules/dlicense/src/cli.js",
+    "snyk-protect": "snyk protect"
+  },
+  "main": "app.js",
+  "author": "nedra",
+  "license": "",
+  "engines": {
+    "node": "12"
+  }
+}
