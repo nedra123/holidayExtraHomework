@@ -19,7 +19,7 @@ pm2.connect(function() {
   pm2.start(
     {
       script: 'app.js',
-      name: 'autoScout24',
+      name: 'holidayExtras',
       exec_mode: 'fork',
       instances: 1,
       max_memory_restart: maxMemory + 'M',
@@ -28,7 +28,7 @@ pm2.connect(function() {
     function() {
       // Display logs in standard output
 
-      console.log('autoScout24 homework ready');
+      console.log('Holiday Extras homework ready');
       pm2.launchBus(function(err, bus) {
         console.log('[PM2] Log streaming started');
 

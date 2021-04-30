@@ -1,16 +1,16 @@
 {
-  "name": "autoScout",
+  "name": "holiday",
   "private": true,
   "version": "0.0.1",
   "description": "",
   "keywords": [],
   "dependencies": {
-    "@hapi/boom": "^9.1.1",
+    "@hapi/boom": "^9.1.2",
     "@hapi/glue": "^6.1.0",
     "@hapi/hapi": "^18.3.1",
-    "@hapi/joi": "^17.1.1",
     "@hapi/lab": "^24.1.0",
     "@pm2/io": "^4.3.5",
+    "ajv": "^8.2.0",
     "blipp": "^4.0.2",
     "chai": "^4.2.0",
     "csv-file-validator": "^1.10.1",
@@ -18,10 +18,11 @@
     "csv-parser": "^3.0.0",
     "fast-csv": "^4.3.6",
     "hapi-api-key": "^3.3.0",
+
+ 
+    "hapi-mongodb": "^9.0.2",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "neat-csv": "^6.0.1",
-    "node-csv": "^0.1.2",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0"
   },

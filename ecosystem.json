@@ -1,13 +1,9 @@
 {
     "apps": [
       {
-        "name": "autoScout",
+        "name": "holiday extras",
         "script": "app.js",
-        "instances": 1,
-        "exec_mode": "cluster_mode",
-        "watch": ["api", "config", "app.js"],
-        "ignore_watch": ["docs", "out"],
-        "merge_logs": true
+        "instances": 1
       }
     ]
   }

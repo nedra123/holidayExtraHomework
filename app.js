@@ -18,7 +18,7 @@ const init = async () => {
     method: 'GET',
     path: '/',
     handler: () => {
-      return 'Autoscout 24';
+      return 'Holiday Extras';
     },
     options: {
       auth: false
@@ -33,7 +33,7 @@ const init = async () => {
     return server;
   } else {
     await server.start();
-    debug(` 'Autoscout 24 running at: ${server.info.uri}`); // eslint-disable-line
+    debug(`Holiday Extras running at: ${server.info.uri}`); // eslint-disable-line
   }
 };
 
